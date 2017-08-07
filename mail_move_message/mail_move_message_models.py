@@ -187,13 +187,13 @@ class Wizard(models.TransientModel):
                 'tag': 'reload',
             }
         return {
-            'name': _('Record'),
-            'view_type': 'form',
-            'view_mode': 'form',
-            'res_model': r.model,
-            'res_id': r.res_id,
-            'views': [(False, 'form')],
-            'type': 'ir.actions.act_window',
+            # 'name': _('Record'),
+            # 'view_type': 'form',
+            # 'view_mode': 'form',
+            # 'res_model': r.model,
+            # 'res_id': r.res_id,
+            # 'views': [(False, 'form')],
+            # 'type': 'ir.actions.act_window',
         }
 
     @api.one

@@ -78,7 +78,7 @@
                 <button special="cancel" string="Close" class="oe_link"/>
 
 
-                <button name="delete" string="Delete message" type="object" class="oe_highlight oe_right" confirm="Do you really want to delete this message?" attrs="{'invisible':[('uid','!=',1)]}"/>
+                <button name="delete" string="Delete message" type="object" class="oe_highlight oe_right" confirm="Do you really want to delete this message?" />
             </footer>
         </form>
     </field>
