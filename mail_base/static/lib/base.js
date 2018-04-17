@@ -481,13 +481,17 @@ var MailTools = core.Class.extend({
             }
         });
     },
-
     clear_cache_all_channels: function(){
-        _.each(channels, function(channel){
-            channel.cache = {};
-        });
-    },
-
+         _.each(channels, function(channel){
+            channel.cache = {
+                '[]': {
+                all_history_loaded: false,
+                loaded: false,
+                messages: []
+                }
+            }
+         });
+     },
     add_to_cache: function (message, domain) {
         _.each(message.channel_ids, function (channel_id) {
             var channel = chat_manager.get_channel(channel_id);
